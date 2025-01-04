@@ -1,10 +1,27 @@
 body{
     background-color: #556b2f;
+    font-style: black;
 }
 
 
 h1{
     text-align: center;
-    font-style: italic;
+    font-style: italic bold;
     font-size: 55px;
+    color:black;
+}
+
+#Rólunk {
+    margin-bottom:50px;
+    border-radius: 15px;
+    text-align: justify;
+}
+
+#Események {
+    margin-bottom:50px;
+    border-radius: 15px;
+}
+
+#Tagok {
+    margin-bottom:50px;
 }

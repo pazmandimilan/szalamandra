@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="szalamandra.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
         }
         .carousel-inner img {
             width: 100%;
@@ -32,13 +32,16 @@
                         <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Bemutatkozás</a>
+                        <a class="nav-link" href="#Rólunk">Rólunk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tagok</a>
+                        <a class="nav-link" href="#Tagok">Tagok</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kapcsolat</a>
+                        <a class="nav-link" href="#Események">Események</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Kapcsolat">Kapcsolat</a>
                     </li>
                 </ul>
             </div>
@@ -54,13 +57,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="terv.png" class="d-block w-100" style="height: 492px; object-fit: cover;" alt="Pontyhorgászat" title="Pontyhorgászat">
+                <img src="terv.png" loading="lazy" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Pontyhorgászat" title="Pontyhorgászat">
             </div>
             <div class="carousel-item">
-                <img src="kozos.jpeg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="A csapat" title="A csapat">
+                <img src="kozos.jpeg" loading="lazy" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="A csapat" title="A csapat">
             </div>
             <div class="carousel-item">
-                <img src="salamander.jpg" class="d-block w-100" style="height: 492px; object-fit: cover;" alt="Foltos szalamandra" title="Foltos szalamandra">
+                <img src="salamander.jpg" loading="lazy" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Foltos szalamandra" title="Foltos szalamandra">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -73,13 +76,137 @@
         </button>
     </div>
 
-    
-    <div class="container mt-5">
-        <h1>Üdvözöllek a Szalamandra Carp Team weboldalán!</h1>
+    <div class="container section">
+        <h1 class="text-center">Üdvözöllek a Szalamandra Carp Team weboldalán!</h1>
     </div>
 
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container section bg-light" id="Rólunk">
+        <h2 class="text-center">Rólunk</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Mi vagyunk a Szalamandra Carp Team, egy lelkes pontyhorgász közösség, akik szenvedéllyel űzik a sportot. 2022-ben alapította meg 3 jó barát, akiknek ismerettsége az egyetemről származik. Az egyetemhez való kötődés szintén szerepet játszott a csapat névadásában, ugyanis mindhárman tagjai a Miskolci Szalamandrák Baráti Társaságnak, amelynek ugyan a horgászathoz nincs köze, de a selmeci hagyományok őrzéséhez annál inkább. A csapat nevében megjelenő <a href="https://hu.wikipedia.org/wiki/Foltos_szalamandra" target="_blank">foltos szalamandra</a> a Magyarországon őshonos gyík iránti tiszteletet jelképezi.
+                </p>
+            </div>
+        </div>
+    </div>
 
+    <div class="container section" id="Tagok">
+        <h2 class="text-center">Tagok</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Csabi.jpg" class="card-img-top" alt="Csabi" title="Csabi">
+                    <div class="card-body">
+                        <h5 class="card-title">Márk Csaba</h5>
+                        <p class="card-text">Tapasztalt pontyhorgász, a csapat egyik alapítója.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Milan.jpg" class="card-img-top" alt="Milán" title="Milán">
+                    <div class="card-body">
+                        <h5 class="card-title">Pázmándi Milán</h5>
+                        <p class="card-text">Szenvedélyes pontyhorgász, de a pergetést sem veti meg, a csapat egyik alapítója.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Krisz.jpg" class="card-img-top" alt="Krisztián" title="Krisztián">
+                    <div class="card-body">
+                        <h5 class="card-title">Horváth Krisztián</h5>
+                        <p class="card-text">Kezdő horgász, szintén az alapítók egyike.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section bg-light" id="Események">
+        <h2 class="text-center">Események</h2>
+        <p>Kedvelt horgászhelyszíneink:
+            <li>Harsányi horgásztó - Harsány</li>
+            <li>Alaszka Carp Lake - Erdőtelek</li>
+            <li>Gólem-tó - Nyékládháza</li>
+            <li>Sajó folyó</li>
+        </p>
+        <p class="text-center">Tekintsd meg az általunk szervezett eseményeken készült képeket: </p>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Esemény képek/kep1.jpg" class="d-block w-100" alt="20kg+ ponty" title="20kg+ ponty">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep2.jpg" class="d-block w-100" alt="Az alapítók" title="Az alapítók">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep4.jpg" class="d-block w-100" alt="Közös fogás" title="Közös fogás">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep5.jpg" class="d-block w-100" alt="10kg+ tükörponty" title="10kg+ tükörponty">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep6.jpg" class="d-block w-100" alt="Öreg ponty" title="Öreg ponty">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep7.jpg" class="d-block w-100" alt="Éjszakai fogás" title="Éjszakai fogás">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep8.jpg" class="d-block w-100" alt="Kis pajtás" title="Kis pajtás">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep9.jpg" class="d-block w-100" alt="Esti amúr 15 kg+" title="Esti amúr 15 kg+">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep10.jpg" class="d-block w-100" alt="Nyékládháza Gólem-tó" title="Nyékládháza Gólem-tó">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep11.jpg" class="d-block w-100" alt="Amúr 10kg+" title="Amúr 10kg+">
+              </div>
+              <div class="carousel-item">
+                <img src="/Esemény képek/kep12.jpg" class="d-block w-100" alt="Milán a Sajón" title="Milán a Sajón">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div class="container section" id="Kapcsolat">
+        <h2 class="text-center">Kapcsolat</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Név</label>
+                <input type="text" class="form-control" id="name" placeholder="Add meg a neved">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email cím</label>
+                <input type="email" class="form-control" id="email" placeholder="Add meg az email címed">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Üzenet</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Írd meg az üzeneted"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Küldés</button>
+        </form>
+    </div>
+
+    
+    
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Szalamandra Carp Team. Minden jog fenntartva.</p>
+        <p>Kövess minket: 
+            <a href="#" class="text-white mx-2">Facebook</a> | 
+            <a href="#" class="text-white mx-2">Instagram</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
